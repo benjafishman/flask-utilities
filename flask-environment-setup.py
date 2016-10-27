@@ -45,3 +45,9 @@ run_cmd(git_cmd)
 file = open(".gitignore", "w")
 file.writelines(['*.pyc\n', 'instance/\n'])
 file.close()
+
+# create app.py
+open('app.py', 'a').close()
+
+
+
