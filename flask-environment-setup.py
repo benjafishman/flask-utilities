@@ -6,6 +6,8 @@
 # 1. create root directory of project (shoudl be the project name)
 # 2. setup a new virtualenv for the project
 # 3. create a local git repo and .gitignore for project
+#
+# Important: execute this file from the driectory you intend to house the project
 
 import subprocess
 import os
@@ -22,7 +24,7 @@ if not os.path.exists(root_dir_name):
     os.makedirs(root_dir_name)
 
 # cd into project directory
-dname = os.path.dirname(os.path.realpath(__file__)) + '/' + root_dir_name
+dname = os.getcwd() + '/' + root_dir_name
 os.chdir(dname)
 
 # setup virtualenwrapper for project
