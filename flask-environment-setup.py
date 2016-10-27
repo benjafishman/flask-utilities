@@ -1,4 +1,12 @@
 #!/usr/local/bin/python3
+
+########
+#
+# A Script to aid in setting up an environemnt for a flask project
+# 1. create root directory of project (shoudl be the project name)
+# 2. setup a new virtualenv for the project
+# 3. create a local git repo and .gitignore for project
+
 import subprocess
 import os
 
@@ -7,10 +15,8 @@ def run_cmd(cmd):
 	process.wait()
 	print(process.returncode)
 
-# create root directory
+# create root directory for project
 root_dir_name = input("What is the project name (root directory): ")
-
-print(root_dir_name)
 
 if not os.path.exists(root_dir_name):
     os.makedirs(root_dir_name)
