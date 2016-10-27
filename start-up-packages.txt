@@ -1,8 +1,7 @@
 ###
 # copy and paste below into command prompt
 # you must update <virtual-environment-name>
-# 
+# workon <virtual-environment-name>
 
-workon <virtual-environment-name>
-pip install install Flask==0.10.1 psycopg2==2.6.1 Flask-SQLAlchemy==2.1 Flask-Migrate==1.8.0
+pip install Flask==0.10.1 psycopg2==2.6.1 Flask-SQLAlchemy==2.1 Flask-Migrate==1.8.0
 pip freeze > requirements.txt
